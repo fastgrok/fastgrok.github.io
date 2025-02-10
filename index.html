@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FastGrok - Enterprise Search & Discovery Platform</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --secondary: #64748b;
+            --bg-light: #f8fafc;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            line-height: 1.5;
+            color: #1a1a1a;
+        }
+        
+        header {
+            background: var(--bg-light);
+            padding: 1rem;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary);
+        }
+        
+        .nav-links a {
+            margin-left: 2rem;
+            text-decoration: none;
+            color: var(--secondary);
+        }
+        
+        .hero {
+            padding: 4rem 2rem;
+            text-align: center;
+            background: linear-gradient(to bottom, var(--bg-light), white);
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #1a1a1a;
+        }
+        
+        .hero p {
+            font-size: 1.25rem;
+            color: var(--secondary);
+            max-width: 600px;
+            margin: 0 auto 2rem;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: var(--primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 0.5rem;
+            font-weight: 500;
+            transition: background 0.3s;
+        }
+        
+        .cta-button:hover {
+            background: var(--primary-dark);
+        }
+        
+        .features {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .feature-card {
+            padding: 2rem;
+            border-radius: 0.5rem;
+            background: white;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        
+        .feature-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+        
+        .connectors {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        .connectors h2 {
+            margin-bottom: 2rem;
+        }
+        
+        .connector-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+        }
+        
+        .connector-item {
+            padding: 1rem;
+            background: var(--bg-light);
+            border-radius: 0.5rem;
+            font-weight: 500;
+        }
+        
+        footer {
+            background: var(--bg-light);
+            padding: 2rem;
+            text-align: center;
+            margin-top: 4rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">FastGrok</div>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#connectors">Connectors</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Discover Insights Across Your Enterprise</h1>
+        <p>FastGrok is an intelligent enterprise search platform that connects and analyzes data from all your IT systems, revealing hidden relationships and actionable insights.</p>
+        <a href="#contact" class="cta-button">Request Demo</a>
+    </section>
+
+    <section class="features" id="features">
+        <div class="feature-card">
+            <h3>Universal Search</h3>
+            <p>Search across all your enterprise systems from a single interface. Our advanced algorithms understand context and relationships between different data sources.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Intelligent Relationships</h3>
+            <p>Automatically discover and visualize relationships between assets, dependencies, and systems across your organization.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Enterprise Security</h3>
+            <p>Built with enterprise-grade security. Role-based access control ensures users only see what they're authorized to access.</p>
+        </div>
+    </section>
+
+    <section class="connectors" id="connectors">
+        <h2>Supported Systems</h2>
+        <div class="connector-grid">
+            <div class="connector-item">ServiceNow</div>
+            <div class="connector-item">Jira</div>
+            <div class="connector-item">GitHub</div>
+            <div class="connector-item">Salesforce</div>
+            <div class="connector-item">AWS</div>
+            <div class="connector-item">Azure</div>
+            <div class="connector-item">Google Cloud</div>
+            <div class="connector-item">Kubernetes</div>
+            <div class="connector-item">Confluence</div>
+            <div class="connector-item">SharePoint</div>
+            <div class="connector-item">Oracle</div>
+            <div class="connector-item">SAP</div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <h2>Ready to get started?</h2>
+        <p>Contact us to schedule a demo and see how FastGrok can transform your enterprise search experience.</p>
+        <a href="mailto:contact@fastgrok.com" class="cta-button">Contact Sales</a>
+    </footer>
+</body>
+</html>
